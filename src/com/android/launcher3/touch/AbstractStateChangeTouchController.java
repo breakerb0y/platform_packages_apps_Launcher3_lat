@@ -90,6 +90,7 @@ public abstract class AbstractStateChangeTouchController
 
     @Override
     public boolean onControllerInterceptTouchEvent(MotionEvent ev) {
+    /*
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
             mNoIntercept = !canInterceptTouch(ev);
             if (mNoIntercept) {
@@ -124,6 +125,8 @@ public abstract class AbstractStateChangeTouchController
 
         onControllerTouchEvent(ev);
         return mDetector.isDraggingOrSettling();
+        */
+        return false;
     }
 
     private int getSwipeDirection() {

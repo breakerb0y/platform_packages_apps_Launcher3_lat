@@ -75,8 +75,8 @@ public class ItemLongClickListener {
         }
         if (!(v.getTag() instanceof ItemInfo)) return false;
 
-        launcher.setWaitingForResult(null);
-        beginDrag(v, launcher, (ItemInfo) v.getTag(), new DragOptions());
+        //launcher.setWaitingForResult(null);
+       // beginDrag(v, launcher, (ItemInfo) v.getTag(), new DragOptions());
         return true;
     }
 

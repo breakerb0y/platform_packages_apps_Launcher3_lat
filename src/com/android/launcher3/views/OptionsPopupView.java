@@ -190,7 +190,7 @@ public class OptionsPopupView<T extends Context & ActivityContext> extends Arrow
             popup.mItemMap.put(view, item);
         }
 
-        popup.show();
+        //popup.show();
         return popup;
     }
 
