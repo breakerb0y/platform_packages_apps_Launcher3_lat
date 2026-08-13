@@ -20,5 +20,6 @@
     android:singleLine="false"
     android:lines="2"
     launcher:iconDisplay="all_apps"
-    launcher:centerVertically="true" />
+    launcher:centerVertically="true"
+    android:visibility="gone"/>
 

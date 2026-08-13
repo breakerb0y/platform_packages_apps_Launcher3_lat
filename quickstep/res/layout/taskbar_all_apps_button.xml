@@ -19,4 +19,5 @@
     android:layout_width="@dimen/taskbar_icon_min_touch_size"
     android:layout_height="@dimen/taskbar_icon_min_touch_size"
     android:backgroundTint="@android:color/transparent"
-    android:contentDescription="@string/all_apps_button_label" />
+    android:contentDescription="@string/all_apps_button_label"
+    android:visibility="gone" />

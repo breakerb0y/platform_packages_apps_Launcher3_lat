@@ -22,4 +22,5 @@
     android:clipChildren="true"
     android:clipToPadding="false"
     android:focusable="false"
-    android:saveEnabled="false" />
+    android:saveEnabled="false"
+    android:visibility="gone" />

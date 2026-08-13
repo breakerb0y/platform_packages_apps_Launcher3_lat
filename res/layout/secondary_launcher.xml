@@ -40,7 +40,8 @@
         android:src="@drawable/ic_apps"
         android:background="@drawable/bg_all_apps_button"
         android:contentDescription="@string/all_apps_button_label"
-        android:onClick="onAppsButtonClicked" />
+        android:onClick="onAppsButtonClicked"
+        android:visibility="gone" />
 
     <com.android.launcher3.allapps.SecondaryLauncherAllAppsContainerView
         android:id="@+id/apps_view"

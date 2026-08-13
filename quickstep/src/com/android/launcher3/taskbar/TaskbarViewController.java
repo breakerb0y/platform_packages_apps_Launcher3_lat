@@ -468,8 +468,7 @@ public class TaskbarViewController implements TaskbarControllers.LoggableTaskbar
         }
 
         if (mActivity.isThreeButtonNav()) {
-            mTaskbarView.getAllAppsButtonContainer()
-                    .setTranslationXForTaskbarAllAppsIcon(allAppIconTranslateRange);
+            mTaskbarView.getAllAppsButtonContainer().setVisibility(View.GONE);
             return;
         }
 

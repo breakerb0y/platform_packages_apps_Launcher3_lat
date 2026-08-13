@@ -95,7 +95,6 @@ public class AnimatedTaskbarView extends ConstraintLayout {
         int hotseatLeft = hotseat.getLeft();
 
         animators.add(ObjectAnimator.ofFloat(mBackground, View.ALPHA, 1f, 0f));
-        animators.add(ObjectAnimator.ofFloat(mAllAppsButton, View.ALPHA, 1f, 0f));
         animators.add(createIconDisappearanceToHotseatAnimator(
                 mIcon1, hotseat.findViewById(R.id.hotseat_icon_1), hotseatTop, hotseatLeft));
         animators.add(createIconDisappearanceToHotseatAnimator(
@@ -136,7 +135,6 @@ public class AnimatedTaskbarView extends ConstraintLayout {
         int hotseatLeft = hotseat.getLeft();
 
         animators.add(ObjectAnimator.ofFloat(mBackground, View.ALPHA, 0f, 1f));
-        animators.add(ObjectAnimator.ofFloat(mAllAppsButton, View.ALPHA, 0f, 1f));
         animators.add(createIconAppearanceFromHotseatAnimator(
                 mIcon1, hotseat.findViewById(R.id.hotseat_icon_1), hotseatTop, hotseatLeft));
         animators.add(createIconAppearanceFromHotseatAnimator(
