@@ -1043,20 +1043,12 @@ public class NavbarButtonsViewController implements TaskbarControllers.LoggableT
             // Add spacing after the end of the last nav button
             FrameLayout.LayoutParams navButtonParams =
                     (FrameLayout.LayoutParams) mNavButtonContainer.getLayoutParams();
-            navButtonParams.gravity = Gravity.END;
-            navButtonParams.width = FrameLayout.LayoutParams.WRAP_CONTENT;
-            navButtonParams.height = MATCH_PARENT;
-
-            int navMarginEnd = (int) res.getDimension(dp.inv.inlineNavButtonsEndSpacing);
-            int contextualWidth = mEndContextualContainer.getWidth();
-            // If contextual buttons are showing, we check if the end margin is enough for the
-            // contextual button to be showing - if not, move the nav buttons over a smidge
-            if (isA11yButtonPersistent() && navMarginEnd < contextualWidth) {
-                // Additional spacing, eat up half of space between last icon and nav button
-                navMarginEnd += res.getDimensionPixelSize(R.dimen.taskbar_hotseat_nav_spacing) / 2;
-            }
-            navButtonParams.setMarginEnd(navMarginEnd);
-            mNavButtonContainer.setLayoutParams(navButtonParams);
+			navButtonParams.gravity = Gravity.CENTER;
+			navButtonParams.width = FrameLayout.LayoutParams.WRAP_CONTENT;
+			navButtonParams.height = MATCH_PARENT;
+			navButtonParams.setMarginEnd(0);
+			navButtonParams.setMarginStart(0);
+			mNavButtonContainer.setLayoutParams(navButtonParams);
 
             // Add the spaces in between the nav buttons
             int spaceInBetween = res.getDimensionPixelSize(R.dimen.taskbar_button_space_inbetween);

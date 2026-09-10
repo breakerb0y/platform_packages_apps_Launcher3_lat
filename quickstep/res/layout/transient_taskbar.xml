@@ -79,7 +79,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_gravity="end"/>
+            android:layout_gravity="center"/>
 
         <FrameLayout
             android:id="@+id/end_contextual_buttons"
